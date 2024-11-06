@@ -167,4 +167,17 @@ With the environment and backup strategy set, I configured Azure DMS for an onli
 BACKUP DATABASE BookpublisherDistributionDB 
 TO DISK = 'C:\Backups\BookpublisherDistributionDB_Full.bak';
 
+### **Transaction Log Backup Script
+**
+```sql
+BACKUP LOG BookpublisherDistributionDB
+TO DISK = 'C:\Backups\BookpublisherDistributionDB_Log.bak';
+
+### **Conclusion**
+
+With all these actions, I successfully migrated the BookpublisherDistributionDB database to Azure SQL Database, achieving a seamless transition.
+
+
+
+
 
